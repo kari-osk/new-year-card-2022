@@ -13,9 +13,15 @@
   background-color: #000;
 }
 
+.neon-wrapper {
+  display: inline-flex;
+  filter: brightness(150%);
+  overflow: hidden;
+}
+
 .txt {
   color: #fff;
-  background: #000;
+  background-color: #000;
   font-size: 4rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 500;
@@ -31,7 +37,7 @@
 .txt-1 {
   top: 0;
   color: #fff;
-  background: #000;
+  background-color: #000;
   font-size: 2rem;
   font-weight: 700;
   font-family: 'Bungee Inline', cursive;
@@ -42,12 +48,6 @@
   position: absolute;
   mix-blend-mode: difference;
   filter: blur(1px);
-}
-
-.neon-wrapper {
-  display: inline-flex;
-  filter: brightness(150%);
-  overflow: hidden;
 }
 
 .gradient {
