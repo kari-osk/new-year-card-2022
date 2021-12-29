@@ -70,8 +70,8 @@
   background: radial-gradient(circle, rgb(195, 250, 252), #000 42%) center / 30%
     30%;
   position: absolute;
-  top: -100%;
-  left: -100%;
+  top: -50%;
+  left: -50%;
   right: 0;
   bottom: 0;
   mix-blend-mode: color-dodge;
@@ -153,5 +153,20 @@
     display: inline-flex;
     filter: brightness(150%);
     overflow: hidden;
+  }
+  .color-dodge {
+    background: radial-gradient(circle, rgb(195, 250, 252), #000 42%) center /
+      30% 30%;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: color-dodge;
+    -webkit-animation: dodge-area 3s linear infinite;
+    -moz-animation: dodge-area 3s linear infinite;
+    -o-animation: dodge-area 3s linear infinite;
+    -ms-animation: dodge-area 3s linear infinite;
+    animation: dodge-area 3s linear infinite;
   }
 }
