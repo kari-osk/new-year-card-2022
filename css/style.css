@@ -104,10 +104,36 @@
   width: 32px;
 }
 
-@-webkit-keyframes dodge-area {
+@keyframes dodge-area {
   to {
     transform: translate(50%, 50%);
+  }
+}
+
+@-webkit-keyframes dodge-area {
+  to {
     -webkit-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+  }
+}
+
+@-moz-keyframes dodge-area {
+  to {
+    -moz-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+  }
+}
+
+@-o-keyframes dodge-area {
+  to {
+    -o-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+  }
+}
+@-ms-keyframes dodge-area {
+  to {
+    -ms-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
   }
 }
 
