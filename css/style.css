@@ -108,12 +108,6 @@
   width: 32px;
 }
 
-@keyframes dodge-area {
-  to {
-    transform: translate(50%, 50%);
-  }
-}
-
 @-webkit-keyframes dodge-area {
   to {
     -webkit-transform: translate(50%, 50%);
@@ -140,6 +134,11 @@
     transform: translate(50%, 50%);
   }
 }
+@keyframes dodge-area {
+  to {
+    transform: translate(50%, 50%);
+  }
+}
 
 @media (min-width: 768px) {
   .txt {
@@ -148,5 +147,11 @@
 
   .txt-1 {
     font-size: 3.75rem;
+  }
+
+  .neon-wrapper {
+    display: inline-flex;
+    filter: brightness(150%);
+    overflow: hidden;
   }
 }
