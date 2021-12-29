@@ -21,6 +21,7 @@ body {
   display: inline-flex;
   filter: brightness(150%);
   overflow: hidden;
+  min-height: 0px;
 }
 
 .txt {
@@ -77,10 +78,10 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: -20%;
+  /* top: -20%;
   left: -20%;
   right: 0;
-  bottom: 0;
+  bottom: 0; */
   mix-blend-mode: color-dodge;
   -webkit-animation: dodge-area 3s linear infinite;
   -moz-animation: dodge-area 3s linear infinite;
