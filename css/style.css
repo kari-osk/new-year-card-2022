@@ -10,7 +10,7 @@ body {
 }
 .wrapper {
   width: 100%;
-  height: 400px;
+  height: auto;
   display: flex;
   flex-direction: column;
   margin-top: 50px;
@@ -74,8 +74,8 @@ body {
 }
 
 .color-dodge {
-  background: radial-gradient(circle, rgb(195, 250, 252), #000 40%) center / 20%
-    20%;
+  background: radial-gradient(circle, rgb(195, 250, 252), #000 40%) center / 15%
+    15%;
   position: absolute;
   top: -100%;
   left: -100%;
@@ -95,6 +95,7 @@ body {
   padding: 30px;
   font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  z-index: 1;
 }
 
 .attribution a {
