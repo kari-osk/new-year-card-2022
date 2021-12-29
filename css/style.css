@@ -5,14 +5,14 @@
 }
 body {
   background-color: #000;
-  height: 100%;
+  height: 100vh;
   text-align: center;
 }
 .wrapper {
   width: 100%;
-  height: 100vh;
+  height: auto; /*100%*/
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   margin-top: 50px;
   align-items: center;
   justify-content: center;
@@ -20,17 +20,16 @@ body {
   overflow: hidden;
 }
 
-.txt {
+.text {
   width: 100vw;
   height: 100vh;
   color: #fff;
   background-color: #000;
-  font-size: 2.5rem;
-  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-size: 4rem;
   font-family: 'Bungee Inline', cursive;
 }
 
-.txt::before {
+.text::before {
   content: '2022';
   position: absolute;
   mix-blend-mode: difference;
@@ -43,28 +42,12 @@ body {
   min-height: 0px;
 }
 
-/* .txt-1 {
-  top: 0;
-  color: #fff;
-  background-color: #000;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.txt-1::before {
-  content: 'Feliz Ano Novo';
-  position: absolute;
-  mix-blend-mode: difference;
-  filter: blur(1px);
-} */
-
 .gradient {
   background: linear-gradient(
-    112.26229236152017deg,
-    rgba(207, 180, 64, 1) 13.746093635757763%,
-    rgba(207, 180, 64, 1) 15.305664011587698%,
-    rgba(157, 53, 242, 1) 59.320205729454756%,
-    rgba(67, 0, 237, 1) 96.92318034668764%
+    90.1944178895667deg,
+    rgba(19, 168, 151, 1) 22.122268676757812%,
+    rgba(19, 167, 151, 1) 22.122268676757812%,
+    rgba(158, 0, 236, 1) 79.68147277832031%
   );
   position: absolute;
   top: 0;
@@ -89,7 +72,7 @@ body {
   -ms-animation: dodge-area 3s linear infinite;
   animation: dodge-area 3s linear infinite;
 }
-.attribution {
+.github {
   color: #4d2a7e;
   background-color: #000;
   text-align: center;
@@ -99,11 +82,11 @@ body {
   overflow: hidden;
 }
 
-.attribution a {
+.github a {
   text-decoration: none;
 }
 
-.attribution a:hover {
+.github a:hover {
   font-weight: 600;
   color: #7c6799;
 }
@@ -159,13 +142,10 @@ body {
   }
 
   .txt {
-    font-size: 5.625rem;
+    font-size: 8rem;
   }
 
-  .txt-1 {
-    font-size: 3.75rem;
-  }
-  .color-dodge {
+  /* .color-dodge {
     background: radial-gradient(circle, rgb(195, 250, 252), #000 42%) center /
       30% 30%;
     position: absolute;
@@ -178,6 +158,6 @@ body {
     -moz-animation: dodge-area 3s linear infinite;
     -o-animation: dodge-area 3s linear infinite;
     -ms-animation: dodge-area 3s linear infinite;
-    animation: dodge-area 3s linear infinite;
-  }
+    animation: dodge-area 3s linear infinite; */
+  /* } */
 }
