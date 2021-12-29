@@ -75,6 +75,10 @@
   right: 0;
   bottom: 0;
   mix-blend-mode: color-dodge;
+  -webkit-animation: dodge-area 3s linear infinite;
+  -moz-animation: dodge-area 3s linear infinite;
+  -o-animation: dodge-area 3s linear infinite;
+  -ms-animation: dodge-area 3s linear infinite;
   animation: dodge-area 3s linear infinite;
 }
 .attribution {
