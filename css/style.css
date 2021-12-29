@@ -3,15 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  background-color: #000;
+  height: 100%;
+}
 .wrapper {
-  height: 100vh;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: #000;
-  background-color: #000;
 }
 
 .neon-wrapper {
@@ -151,7 +152,9 @@
   .txt-1 {
     font-size: 3.75rem;
   }
-
+  .wrapper {
+    margin-top: 150px;
+  }
   .neon-wrapper {
     display: inline-flex;
     filter: brightness(150%);
