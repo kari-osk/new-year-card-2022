@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+.txt {
+  color: #fff;
+  background: #000;
+  font-size: 90px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+}
+
+.txt::before {
+  content: '2022';
+  position: absolute;
+  mix-blend-mode: difference;
+  filter: blur(2px);
+}
+
+.txt-1 {
+  top: 0;
+  color: #fff;
+  background: #000;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: 'Bungee Inline', cursive;
+}
+
+.txt-1::before {
+  content: 'Feliz Ano Novo';
+  position: absolute;
+  mix-blend-mode: difference;
+  filter: blur(1px);
+}
+
+.neon-wrapper {
+  display: inline-flex;
+  filter: brightness(150%);
+  overflow: hidden;
+}
+
+.gradient {
+  /* background: linear-gradient(72.94724027964116deg, rgba(224, 213, 49,1) 13.23014311492443%,rgba(222, 213, 49,1) 13.23014311492443%,rgba(73, 242, 126,1) 51.95459146052599%,rgba(116, 76, 237,1) 88.7900423258543%); */
+  background: linear-gradient(
+    112.26229236152017deg,
+    rgba(207, 180, 64, 1) 13.746093635757763%,
+    rgba(207, 180, 64, 1) 15.305664011587698%,
+    rgba(157, 53, 242, 1) 59.320205729454756%,
+    rgba(67, 0, 237, 1) 96.92318034668764%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+
+.color-dodge {
+  background: radial-gradient(circle, rgb(195, 250, 252), #000 40%) center / 30%
+    30%;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: color-dodge;
+  animation: dodge-area 3s linear infinite;
+}
+.attribution {
+  color: rgb(21, 156, 219);
+  background-color: #000;
+  text-align: center;
+  padding: 30px;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.attribution a {
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+  color: rgb(169, 176, 185);
+}
+
+.gh-icon {
+  width: 20px;
+}
+
+@keyframes dodge-area {
+  to {
+    transform: translate(50%, 50%);
+  }
+}
