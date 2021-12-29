@@ -104,53 +104,19 @@
   width: 32px;
 }
 
-@keyframes dodge-area {
+@-webkit-keyframes dodge-area {
   to {
     transform: translate(50%, 50%);
+    -webkit-transform: translate(50%, 50%);
   }
 }
 
 @media (min-width: 768px) {
   .txt {
-    color: #fff;
-    background: #000;
     font-size: 5.625rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 500;
-  }
-
-  .txt::before {
-    content: '2022';
-    position: absolute;
-    mix-blend-mode: difference;
-    filter: blur(2px);
   }
 
   .txt-1 {
-    top: 0;
-    color: #fff;
-    background: #000;
     font-size: 3.75rem;
-    font-weight: 700;
-    font-family: 'Bungee Inline', cursive;
-  }
-
-  .txt-1::before {
-    content: 'Feliz Ano Novo';
-    position: absolute;
-    mix-blend-mode: difference;
-    filter: blur(1px);
-  }
-
-  .color-dodge {
-    background: radial-gradient(circle, rgb(195, 250, 252), #000 42%) center /
-      30% 30%;
-    position: absolute;
-    top: -100%;
-    left: -100%;
-    right: 0;
-    bottom: 0;
-    mix-blend-mode: color-dodge;
-    animation: dodge-area 3s linear infinite;
   }
 }
